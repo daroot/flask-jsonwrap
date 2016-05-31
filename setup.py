@@ -12,7 +12,7 @@ setup(
     description='Make a Flask app JSON API friendly.',
     long_description=__doc__,
     url='http://github.com/daroot/flask-jsonwrap/',
-    version='1.0.0',
+    version='1.0.1',
     author='Dan Root',
     author_email='rootdan@gmail.com',
     license='WTFPL',
