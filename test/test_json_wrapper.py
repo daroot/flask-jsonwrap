@@ -58,6 +58,6 @@ def test_wrapped_responses(wrapped_client, unwrapped_client, path, code,
     wrapped = wrapped_client.get(path)
 
     assert unwrapped.status_code == code
-    assert expected_unwrapped in unwrapped.data
+    assert expected_unwrapped in unwrapped.data.decode()
     assert wrapped.status_code == code
-    assert expected_wrapped == json.loads(wrapped.data)
+    assert expected_wrapped == json.loads(wrapped.data.decode())

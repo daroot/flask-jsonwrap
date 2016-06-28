@@ -1,0 +1,11 @@
+[run]
+branch = True
+source = flask_jsonwrap
+omit =
+    */test/*
+    .tox/*
+
+[report]
+exclude_lines =
+    ✘${TOX_ENVNAME}
+    pragma: no ?cover

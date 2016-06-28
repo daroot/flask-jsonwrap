@@ -31,7 +31,7 @@ class JSONWrap(object):
         return response
 
     def init_app(self, app):
-        for code in default_exceptions.iterkeys():
+        for code in default_exceptions.keys():
             app.register_error_handler(code, self.make_json_error)
 
         return app
